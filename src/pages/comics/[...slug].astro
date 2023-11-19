@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+export async function getStaticPaths() {
+  const comics = await getCollection("comics");
+  return comics.map((comic) => ({
+    params: { slug: comic.slug },
+    props: { comic },
+  }));
+}
+const { comic } = Astro.props;
+const { Content } = await comic.render();
+---
+
+<Content />

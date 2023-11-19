@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import MainLayout from "../../layouts/Main.astro";
+const comics = await getCollection("comics");
+---
+
+<MainLayout
+  title="Comics"
+  description="Comics by our team"
+  socialImage="/images/social/home.png"
+>
+  <ul class="list-disc m-auto">
+    {
+      comics.map((comic) => (
+        <li>
+          <a
+            href={`/comics/${comic.slug}/`}
+            class="underline decoration-pink-500 duration-500 hover:decoration-sky-500 text-xl sm:text-3xl"
+          >
+            {comic.data.title}
+          </a>
+          <p class="text-base sm:text-lg">{comic.data.description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</MainLayout>

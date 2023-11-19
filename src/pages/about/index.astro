@@ -1,0 +1,23 @@
+---
+import MainLayout from "../../layouts/Main.astro";
+const title = "About Us";
+---
+
+<MainLayout
+  title={title}
+  description="The Writers Workshop Bangladesh"
+  socialImage="/images/social/home.png"
+>
+  <div class="m-auto">
+    <h1 class="text-center text-lg sm:text-2xl sm:mb-1">{title}</h1>
+    <ul class="sm:list-inside sm:list-disc">
+      <li>
+        Co-founder, Web Developer, Poem Writer and Translator: Moheshwar
+        Amarnath Biswas
+      </li>
+      <li>Founder, Writer and Managing Director: Mahashat Rahman</li>
+      <li>Co-Founder and Comics Maker: Ohiyan Zaman Ohin</li>
+      <li>Co-Founder, Comics Maker and Story Writer: Saifuzzaman Badhon</li>
+    </ul>
+  </div>
+</MainLayout>
