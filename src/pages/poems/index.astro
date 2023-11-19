@@ -9,13 +9,13 @@ const poems = await getCollection("poems");
   description="poems by our team"
   socialImage="/images/social/home.png"
 >
-  <ul class="list-disc m-auto">
+  <ul class="m-auto list-disc">
     {
       poems.map((poem) => (
         <li>
           <a
             href={`/poems/${poem.slug}/`}
-            class="underline decoration-pink-500 duration-500 hover:decoration-sky-500 text-xl sm:text-3xl"
+            class="text-xl underline decoration-pink-500 duration-500 hover:decoration-sky-500 sm:text-3xl"
           >
             {poem.data.title}
           </a>
