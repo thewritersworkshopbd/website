@@ -1,25 +1,21 @@
-// 1. Import utilities from `astro:content`
-import { z, defineCollection } from "astro:content";
-// 2. Define a schema for each collection you'd like to validate.
+import { defineCollection, z } from "astro:content";
+
+const genericSchema = z.object({
+  lang: z.string(),
+  title: z.string(),
+  author: z.string(),
+});
+
 const comicsCollection = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    author: z.string(),
-  }),
+  schema: genericSchema,
 });
 
 const poemsCollection = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    author: z.string(),
-  }),
+  schema: genericSchema,
 });
 
 const storiesCollection = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    author: z.string(),
-  }),
+  schema: genericSchema,
 });
 
 // 3. Export a single `collections` object to register your collection(s)
