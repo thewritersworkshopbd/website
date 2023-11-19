@@ -4,21 +4,21 @@ import { z, defineCollection } from "astro:content";
 const comicsCollection = defineCollection({
   schema: z.object({
     title: z.string(),
-    description: z.string(),
+    author: z.string(),
   }),
 });
 
 const poemsCollection = defineCollection({
   schema: z.object({
     title: z.string(),
-    description: z.string(),
+    author: z.string(),
   }),
 });
 
 const storiesCollection = defineCollection({
   schema: z.object({
     title: z.string(),
-    description: z.string(),
+    author: z.string()
   }),
 });
 
