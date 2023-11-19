@@ -1,6 +1,6 @@
 # Website of The Writers Workshop Bangladesh
 
-This repository contains source code of our website, where I showcase our works. You can visit my website at <https://thewritersworkshopbd.pages.dev> feel free to contact us if you have any questions or feedback.
+This repository contains source code of our website, where we showcase our works. You can visit our website at <https://thewritersworkshopbd.pages.dev> feel free to contact us if you have any questions or feedback.
 
 [![CodeQL](https://github.com/thewritersworkshopbd/website/actions/workflows/codeql.yml/badge.svg)](https://github.com/thewritersworkshopbd/website/actions/workflows/codeql.yml)
 [![Prettier](https://github.com/thewritersworkshopbd/website/actions/workflows/prettier.yml/badge.svg)](https://github.com/thewritersworkshopbd/website/actions/workflows/prettier.yml)
@@ -12,9 +12,9 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
 
 All layouts are stored in `/src/layouts`
 
-There's nothing special about `src/components/`, but that's where I like to put any Astro/React/Vue/Svelte components.
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte components.
 
-Blog posts are stored in `src/content/posts`
+All contents are stored in `src/content/`
 
 Any static assets, like images, can be placed in the `public/` directory.
 
