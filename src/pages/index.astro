@@ -1,15 +1,17 @@
 ---
 import MainLayout from "../layouts/Main.astro";
 const title = "The Writers Workshop Bangladesh";
+const slogan = "Express your creativity!"
 ---
 
 <MainLayout
   title={title}
-  description="The Writers Workshop Bangladesh"
+  description={slogan}
   socialImage="/images/social/index.png"
 >
   <div class="text-center">
     <h1 class="text-xl sm:text-4xl">{title}</h1>
+    <h2 class="text-lg sm:text-3xl">{slogan}</h2>
     <img
       src="/images/icon.webp"
       alt="Icon"
