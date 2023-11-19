@@ -29,5 +29,5 @@ const storiesCollection = defineCollection({
 export const collections = {
   comics: comicsCollection,
   stories: storiesCollection,
-  poems: poemsCollection
+  poems: poemsCollection,
 };
