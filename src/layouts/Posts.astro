@@ -16,7 +16,6 @@ const { frontmatter } = Astro.props;
     <title>{frontmatter.title}</title>
     <!-- Primary Meta Tags -->
     <meta name="title" content={frontmatter.title} />
-    <meta name="description" content={frontmatter.description} />
     <SocialTags
       title={frontmatter.title}
       description={frontmatter.description}
