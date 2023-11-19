@@ -6,13 +6,15 @@ import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 const { frontmatter } = Astro.props;
 ---
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.ico" />
+<!DOCTYPE html>
+<html lang={frontmatter.lang}>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="icon"
+      href="/favicon.ico"
+    />
     <title>{frontmatter.title}</title>
     <!-- Primary Meta Tags -->
     <meta name="title" content={frontmatter.title} />
