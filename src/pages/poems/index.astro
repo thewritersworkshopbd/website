@@ -19,6 +19,7 @@ const poems = await getCollection("poems");
           >
             {poem.data.title}
           </a>
+          <p class="text-base sm:text-lg">Author: {poem.data.author}</p>
         </li>
       ))
     }

@@ -7,7 +7,7 @@ const comics = await getCollection("comics");
 <MainLayout
   title="Comics"
   description="Comics by our team"
-  socialImage="/images/social/home.png"
+  socialImage="/images/social/comics/index.png"
 >
   <ul class="m-auto list-disc">
     {
@@ -19,7 +19,7 @@ const comics = await getCollection("comics");
           >
             {comic.data.title}
           </a>
-          <p class="text-base sm:text-lg">{comic.data.description}</p>
+          <p class="text-base sm:text-lg">Author: {comic.data.author}</p>
         </li>
       ))
     }

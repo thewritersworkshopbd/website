@@ -1,9 +1,10 @@
 ---
 layout: ../../layouts/Posts.astro
-title: Test
-description: tor baper matha
+lang: bn
+title: দুর্গার আগমন
+author: Moheshwar Amarnath Biswas
 draft: false
-image: /images/social/posts/lll.png
+image: /images/social/poems/index.png
 ---
 
 Test
