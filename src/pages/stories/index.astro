@@ -19,7 +19,7 @@ const stories = await getCollection("stories");
           >
             {story.data.title}
           </a>
-          <p class="text-base sm:text-lg">{story.data.author}</p>
+          <p class="text-base sm:text-lg">Author: {story.data.author}</p>
         </li>
       ))
     }
