@@ -5,7 +5,6 @@ const comicsCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    publishDate: z.date(),
   }),
 });
 
@@ -13,15 +12,13 @@ const poemsCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    publishDate: z.date(),
   }),
 });
 
 const storiesCollection = defineCollection({
   schema: z.object({
     title: z.string(),
-    description: z.string(),
-    publishDate: z.date(),
+    description: z.string()
   }),
 });
 
