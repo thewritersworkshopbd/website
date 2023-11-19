@@ -6,15 +6,13 @@ import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 const { frontmatter } = Astro.props;
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang={frontmatter.lang}>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-      rel="icon"
-      href="/favicon.ico"
-    />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
     <title>{frontmatter.title}</title>
     <!-- Primary Meta Tags -->
     <meta name="title" content={frontmatter.title} />
@@ -24,21 +22,24 @@ const { frontmatter } = Astro.props;
       description={frontmatter.description}
       socialImage={frontmatter.image}
     />
-    <meta
-      name="author"
-      content={frontmatter.author}
+    <meta name="author" content={frontmatter.author} />
+    <SocialTags
+      title={frontmatter.title}
+      description={frontmatter.title}
+      socialImage={frontmatter.image}
     />
-    <SocialTags title={frontmatter.title} description={frontmatter.title} socialImage={frontmatter.image} />
     <ViewTransitions />
-</head>
-<body class="h-screen flex flex-col">
-  <Navbar />
-  <article class="prose sm:m-auto">
-    <h1>{frontmatter.title}</h1>
-    <h2>Author: {frontmatter.author}</h2>
-    <slot />
-  </article>
-  <Footer />
-  <script src="https://kit.fontawesome.com/d105eba00c.js" crossorigin="anonymous"></script>
-</body>
+  </head>
+  <body class="flex h-screen flex-col">
+    <Navbar />
+    <article class="prose sm:m-auto">
+      <h1>{frontmatter.title}</h1>
+      <h2>Author: {frontmatter.author}</h2>
+      <slot />
+    </article>
+    <Footer />
+    <script
+      src="https://kit.fontawesome.com/d105eba00c.js"
+      crossorigin="anonymous"></script>
+  </body>
 </html>

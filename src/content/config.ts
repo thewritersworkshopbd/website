@@ -18,7 +18,7 @@ const poemsCollection = defineCollection({
 const storiesCollection = defineCollection({
   schema: z.object({
     title: z.string(),
-    author: z.string()
+    author: z.string(),
   }),
 });
 
