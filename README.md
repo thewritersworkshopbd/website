@@ -1,6 +1,6 @@
 # Website of The Writers Workshop Bangladesh
 
-This repository contains source code of my portfolio website, where I showcase my skills, projects and achievements as a web developer. You can visit my website at <https://thewritersworkshopbd.pages.dev> and learn more about me and my work. I hope you enjoy browsing through my portfolio and feel free to contact me if you have any questions or feedback.
+This repository contains source code of our website, where I showcase our works. You can visit my website at <https://thewritersworkshopbd.pages.dev> feel free to contact us if you have any questions or feedback.
 
 [![CodeQL](https://github.com/thewritersworkshopbd/website/actions/workflows/codeql.yml/badge.svg)](https://github.com/thewritersworkshopbd/website/actions/workflows/codeql.yml)
 [![Prettier](https://github.com/thewritersworkshopbd/website/actions/workflows/prettier.yml/badge.svg)](https://github.com/thewritersworkshopbd/website/actions/workflows/prettier.yml)
