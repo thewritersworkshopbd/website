@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .snow {
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-image: url("/images/snow.webp");
+  }
+
+}

@@ -9,17 +9,21 @@ const slogan = "Express your creativity!";
   description={slogan}
   socialImage="/images/social/index.png"
 >
-  <div class="text-center">
-    <h1 class="text-xl sm:text-4xl">{title}</h1>
-    <h2 class="text-lg sm:text-3xl">{slogan}</h2>
-    <img
-      src="/images/icon.webp"
-      alt="Icon"
-      width="200"
-      height="160"
-      class="m-auto"
-    />
-    <p>This site is under constuction.</p>
-    <p>Coming soon...</p>
-  </div>
+  <header class="hero">
+    <div class="hero-content flex-col sm:flex-row snow">
+      <div class="text-center sm:text-left">
+        <h1 class="text-xl sm:text-4xl">{title}</h1>
+        <h2 class="text-lg sm:text-3xl">{slogan}</h2>
+        <p>This site is under constuction.</p>
+        <p>Coming soon...</p>
+      </div>
+      <img
+        src="/images/icon.webp"
+        alt="Icon"
+        width="200"
+        height="160"
+        class="m-auto drop-shadow-lg"
+      />
+    </div>
+  </header>
 </MainLayout>
