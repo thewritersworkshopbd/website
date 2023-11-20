@@ -1,5 +1,6 @@
 ---
 import "../styles/index.css";
+import "@fortawesome/fontawesome-free/css/all.css"
 import SocialTags from "../components/SocialTags.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
@@ -37,8 +38,5 @@ const { frontmatter } = Astro.props;
       <slot />
     </article>
     <Footer />
-    <script
-      src="https://kit.fontawesome.com/d105eba00c.js"
-      crossorigin="anonymous"></script>
   </body>
 </html>
