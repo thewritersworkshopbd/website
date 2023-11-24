@@ -85,7 +85,7 @@ You can use [CloudConvert](https://cloudconvert.com) or similar tools to convert
 1. Store your comics in `/public/images/comics`
 1. Create a markdown file in `/src/content/comics`
 1. Add the frontmatter and link the comics.
-Example:
+   Example:
 
 ```md
 ---
@@ -98,5 +98,4 @@ image: /images/social/comics/index.pmg
 ---
 
 ![Terms and Conditions](/images/comics/termsandconditions.webp)
-
 ```
