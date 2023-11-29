@@ -12,6 +12,6 @@
   }
 
   .heading-text {
-    @apply m-4 bg-pink-500 p-4 font-bold text-black rounded-full;
+    @apply m-4 bg-pink-600 p-4 font-bold text-black rounded-full;
   }
 }
