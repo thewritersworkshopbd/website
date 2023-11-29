@@ -10,4 +10,8 @@
     width: 100%;
     background-image: url("/images/snow.webp");
   }
+
+  .heading-text {
+    @apply m-4 bg-pink-500 p-4 font-bold text-black;
+  }
 }
