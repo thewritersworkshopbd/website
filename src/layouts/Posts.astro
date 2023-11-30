@@ -3,7 +3,6 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import { ViewTransitions } from "astro:transitions";
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
-import SocialTags from "../components/SocialTags.astro";
 import "../styles/index.css";
 const { frontmatter } = Astro.props;
 ---
@@ -17,17 +16,7 @@ const { frontmatter } = Astro.props;
     <title>{frontmatter.title}</title>
     <!-- Primary Meta Tags -->
     <meta name="title" content={frontmatter.title} />
-    <SocialTags
-      title={frontmatter.title}
-      description={frontmatter.description}
-      socialImage={frontmatter.image}
-    />
     <meta name="author" content={frontmatter.author} />
-    <SocialTags
-      title={frontmatter.title}
-      description={frontmatter.title}
-      socialImage={frontmatter.image}
-    />
     <ViewTransitions fallback="none" />
   </head>
   <body class="flex h-screen flex-col">
