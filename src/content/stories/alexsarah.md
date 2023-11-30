@@ -3,8 +3,6 @@ layout: ../../layouts/Posts.astro
 lang: en
 title: "Sarah and Alex: The inventor of ArtCode! (Imaginary)"
 author: Moheshwar Amarnath Biswas
-draft: false
-image: /images/social/index.png
 ---
 
 In the heart of Silicon Valley, amidst the hustle and bustle of tech giants and startups, lived a brilliant programmer named Alex. With his tousled brown hair, perpetually furrowed brow, and fingers that danced across the keyboard like a virtuoso pianist, Alex was the epitome of the coding geek. He spent his days immersed in the world of algorithms, data structures, and complex systems, his mind a labyrinth of logic and innovation.

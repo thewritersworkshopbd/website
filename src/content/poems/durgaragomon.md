@@ -3,8 +3,6 @@ layout: ../../layouts/Posts.astro
 lang: bn
 title: দুর্গার আগমন
 author: Moheshwar Amarnath Biswas
-draft: false
-image: /images/social/index.png
 ---
 
 দুর্গা এলো, দুর্গা এলো, <br>
