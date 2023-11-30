@@ -5,4 +5,4 @@ title: Terms and Conditions!
 author: System32 Comics!
 ---
 
-![Terms and Conditions](/images/comics/termsandconditions.webp)
+![Terms and Conditions](../../assets/comics/termsandconditions.webp)

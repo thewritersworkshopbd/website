@@ -1,5 +1,7 @@
 ---
 import MainLayout from "../layouts/Main.astro";
+import Icon from "../assets/images/icon.webp"
+import { Image } from "astro:assets";
 const title = "The Writers Workshop Bangladesh";
 const slogan = "Express your creativity!";
 ---
@@ -7,7 +9,7 @@ const slogan = "Express your creativity!";
 <MainLayout
   title={title}
   description={slogan}
-  socialImage="/images/social/index.png"
+  socialImage="/social_images/index.png"
 >
   <header class="hero">
     <div class="snow hero-content flex-col sm:flex-row">
@@ -15,13 +17,7 @@ const slogan = "Express your creativity!";
         <h1 class="text-xl sm:text-4xl">{title}</h1>
         <h2 class="text-lg sm:text-3xl">{slogan}</h2>
       </div>
-      <img
-        src="/images/icon.webp"
-        alt="Icon"
-        width="200"
-        height="160"
-        class="m-auto drop-shadow-lg"
-      />
+      <Image src={Icon} alt="Icon" class="m-auto drop-shadow-lg"/>
     </div>
   </header>
 </MainLayout>
