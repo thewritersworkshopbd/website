@@ -1,10 +1,10 @@
 ---
-import "../styles/index.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-import SocialTags from "../components/SocialTags.astro";
-import Navbar from "../components/Navbar.astro";
-import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import SocialTags from "../components/SocialTags.astro";
+import "../styles/index.css";
 const { frontmatter } = Astro.props;
 ---
 
@@ -32,7 +32,7 @@ const { frontmatter } = Astro.props;
   </head>
   <body class="flex h-screen flex-col">
     <Navbar />
-    <article class="prose sm:m-auto">
+    <article class="prose prose-a:link sm:m-auto">
       <h1>{frontmatter.title}</h1>
       <h2>Author: {frontmatter.author}</h2>
       <slot />
