@@ -24,11 +24,13 @@ Use the following command to pull the repository from [GitHub](https://github.co
 git clone https://github.com/thewritersworkshopbd/website.git
 ```
 
+Please use `git pull` to update your local repository
+
 ## Installing dependencies and extensions
 
 [Visual Studio Code](https://code.visualstudio.com) will automatically prompt you to install recommended extensions.
 
-Run the following command to install dependencies:
+Run the following command to install dependencies (run again after updating your local repository):
 
 ```bash
 npm install
@@ -48,12 +50,8 @@ layout: ../../layouts/Posts.astro
 lang: bn
 title: দুর্গার আগমন
 author: Moheshwar Amarnath Biswas
-draft: false
-image: /images/social/poems/index.png
 ---
 ```
-
-Images stored in `/public/images/social/poems` will be used for social preview.
 
 ### Writing Stories
 
@@ -67,22 +65,14 @@ layout: ../../layouts/Posts.astro
 lang: en
 title: "Sarah and Alex: The inventor of ArtCode! (Imaginary)"
 author: Moheshwar Amarnath Biswas
-draft: false
-image: /images/social/stories/index.png
 ---
 ```
 
-Images stored in `/public/images/social/stories` will be used for social preview.
-
-If you need to add any image please store them in `/public/images/stories`
-If you add any images convert it to `.webp` format first. We require using `.webp` format for performance reasons!
-
-You can use [CloudConvert](https://cloudconvert.com) or similar tools to convert your image to `.webp`
+If you need to add any image please store them in `/src/assets/images/stories`
 
 ### Making Comics
 
-1. Convert your comics to `.webp` format using [CloudConvert](https://cloudconvert.com/) or similar tools if you haven't already.
-1. Store your comics in `/public/images/comics`
+1. Store your comics in `/src/assets/comics`
 1. Create a markdown file in `/src/content/comics`
 1. Add the frontmatter and link the comics.
    Example:
@@ -93,9 +83,7 @@ lang: en
 layout: ../../layouts/Posts.astro
 title: Terms and Conditions!
 author: System32 Comics!
-draft: false
-image: /images/social/comics/index.pmg
 ---
 
-![Terms and Conditions](/images/comics/termsandconditions.webp)
+![Terms and Conditions](/src/assets/comics/termsandconditions.webp)
 ```
