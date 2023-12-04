@@ -12,7 +12,8 @@ Make sure following tools are installed in your system:
 
 - [Git](https://git-scm.com)
 - [Visual Studio Code](https://code.visualstudio.com)
-- [Node.js](https://nodejs.org)
+- [Node.js](https://nodejs.org) >= v18
+- [pnpm](https://pnpm.io) >= v8
 
 You also need a [GitHub](https://github.com) account for doing any kind of contribution.
 
@@ -33,7 +34,7 @@ Please use `git pull` to update your local repository
 Run the following command to install dependencies (run again after updating your local repository):
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Doing Contribution
