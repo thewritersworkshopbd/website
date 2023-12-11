@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import ISO6391 from "iso-639-1";
 import MainLayout from "../../layouts/Main.astro";
 const stories = await getCollection("stories");
 ---
@@ -20,6 +21,9 @@ const stories = await getCollection("stories");
             {story.data.title}
           </a>
           <p class="text-base sm:text-lg">Author: {story.data.author}</p>
+          <p class="text-base sm:text-lg">
+            Language: {ISO6391.getName(story.data.lang)}
+          </p>
         </li>
       ))
     }
