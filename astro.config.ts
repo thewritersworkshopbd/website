@@ -49,7 +49,7 @@ export default defineConfig({
             sizes: "512x512",
           },
           {
-            src: "pwa-512x512-square.webp",
+            src: "pwa-512x512-square.png",
             sizes: "512x512",
             purpose: "any",
           },
