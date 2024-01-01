@@ -16,13 +16,13 @@ dependencies:
     version: 3.0.3
   '@astrojs/tailwind':
     specifier: ^5.0.4
-    version: 5.0.4(astro@4.0.7)(tailwindcss@3.4.0)
+    version: 5.0.4(astro@4.0.8)(tailwindcss@3.4.0)
   '@fortawesome/fontawesome-free':
     specifier: ^6.4.2
     version: 6.5.1
   astro:
-    specifier: ^4.0.7
-    version: 4.0.7(lightningcss@1.22.1)(typescript@5.3.3)
+    specifier: ^4.0.8
+    version: 4.0.8(lightningcss@1.22.1)(typescript@5.3.3)
   iso-639-1:
     specifier: ^3.1.0
     version: 3.1.0
@@ -42,7 +42,7 @@ devDependencies:
     version: 0.5.10(tailwindcss@3.4.0)
   '@vite-pwa/astro':
     specifier: ^0.2.0
-    version: 0.2.0(astro@4.0.7)(vite-plugin-pwa@0.17.4)
+    version: 0.2.0(astro@4.0.8)(vite-plugin-pwa@0.17.4)
   browserslist:
     specifier: ^4.22.2
     version: 4.22.2
@@ -188,13 +188,13 @@ packages:
       zod: 3.22.4
     dev: false
 
-  /@astrojs/tailwind@5.0.4(astro@4.0.7)(tailwindcss@3.4.0):
+  /@astrojs/tailwind@5.0.4(astro@4.0.8)(tailwindcss@3.4.0):
     resolution: {integrity: sha512-50ImfEFRBjndtWus6xJOWQ4EVpZWB4d+hieosMPm1Tca68mNTX+Yi1/PhTMk9q/w7iZPIUK/KGBoovo15O10eQ==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.0.7(lightningcss@1.22.1)(typescript@5.3.3)
+      astro: 4.0.8(lightningcss@1.22.1)(typescript@5.3.3)
       autoprefixer: 10.4.16(postcss@8.4.32)
       postcss: 8.4.32
       postcss-load-config: 4.0.2(postcss@8.4.32)
@@ -1879,13 +1879,13 @@ packages:
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  /@vite-pwa/astro@0.2.0(astro@4.0.7)(vite-plugin-pwa@0.17.4):
+  /@vite-pwa/astro@0.2.0(astro@4.0.8)(vite-plugin-pwa@0.17.4):
     resolution: {integrity: sha512-1MBNbRo9I9fp9sUSoaQfI/xHVDRKRoUsWETDJMVoKoctZYfm4fZgb7EN76WJdejW/vup+3+uoFlDMCnca+vZzA==}
     peerDependencies:
       astro: ^1.6.0 || ^2.0.0 || ^3.0.0 || ^4.0.0
       vite-plugin-pwa: '>=0.17.3 <1'
     dependencies:
-      astro: 4.0.7(lightningcss@1.22.1)(typescript@5.3.3)
+      astro: 4.0.8(lightningcss@1.22.1)(typescript@5.3.3)
       vite-plugin-pwa: 0.17.4(vite@5.0.10)(workbox-build@7.0.0)(workbox-window@7.0.0)
     dev: true
 
@@ -2062,8 +2062,8 @@ packages:
       is-shared-array-buffer: 1.0.2
     dev: true
 
-  /astro@4.0.7(lightningcss@1.22.1)(typescript@5.3.3):
-    resolution: {integrity: sha512-K+Ms2AAQvi6yERPuglcI69tnHyTT44JCjzqprSjw3uOwFX7N9obpLgbhmLMH1fPFTgzt3ZD7APjmtDPN51makw==}
+  /astro@4.0.8(lightningcss@1.22.1)(typescript@5.3.3):
+    resolution: {integrity: sha512-LwbYUfdrfys5mtI6cA5V8UvPRUVVTRQ68uF1ylrEge6BkPcHHJ7qCYLNdjnNPxZDR9bWi1awILJESB6j+w0P4w==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
