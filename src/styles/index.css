@@ -23,7 +23,7 @@
 
 @layer components {
   .link {
-    @apply text-pink-700 hover:text-black hover:no-underline dark:text-pink-400 hover:dark:text-white;
+    @apply text-pink-500 underline decoration-pink-500 duration-500 hover:text-[#7a00e6] hover:decoration-[#7a00e6] focus:text-[#7a00e6] focus:decoration-[#7a00e6];
   }
 }
 
@@ -37,6 +37,6 @@
   }
 
   .heading-text {
-    @apply  bg-[#7a00e6] m-3 rounded-md p-2 text-center text-xl text-white sm:text-2xl;
+    @apply m-3 rounded-md bg-[#7a00e6] p-2 text-center text-xl text-white sm:text-2xl;
   }
 }
