@@ -37,6 +37,6 @@
   }
 
   .heading-text {
-    @apply w-full bg-[#7a00e6] p-5 text-center text-xl text-white sm:text-3xl;
+    @apply  bg-[#7a00e6] m-3 rounded-md p-2 text-center text-xl text-white sm:text-2xl;
   }
 }
