@@ -1,7 +1,10 @@
 ---
-import MainLayout from "../layouts/Main.astro";
-import Icon from "../assets/images/icon.webp";
 import { Image } from "astro:assets";
+import greenWeb from "../assets/images/green_web.png";
+import Icon from "../assets/images/icon.webp";
+import mahashatImage from "../assets/images/mahashat.jpg";
+import moheshwarImage from "../assets/images/moheshwar.jpg";
+import MainLayout from "../layouts/Main.astro";
 const title = "The Writers Workshop Bangladesh";
 const slogan = "Express your creativity!";
 ---
@@ -15,9 +18,67 @@ const slogan = "Express your creativity!";
     <div class="snow hero-content max-w-full flex-col sm:flex-row">
       <div class="text-center sm:text-left">
         <h1 class="text-xl sm:text-4xl">{title}</h1>
-        <h2 class="text-lg sm:text-3xl">{slogan}</h2>
+        <p class="text-lg sm:text-3xl">{slogan}</p>
       </div>
       <Image src={Icon} alt="Icon" class="m-auto drop-shadow-lg" />
     </div>
   </header>
+
+  <section class="mt-5" id="featured">
+    <h2 class="heading-text">Featured Contents</h2>
+    <div class="ml-3">
+      <div id="featured-poems">
+        <h3 class="mt-3 text-lg sm:text-3xl">Featured Poems:</h3>
+        <ul class="mt-1 list-inside list-disc">
+          <li>None yet</li>
+        </ul>
+      </div>
+      <div id="featured-comics">
+        <h3 class="mt-3 text-lg sm:text-3xl">Featured Comics:</h3>
+        <div class="mt-1 grid">
+          <p>None yet</p>
+        </div>
+      </div>
+      <div id="featured-stories">
+        <h3 class="mt-3 text-lg sm:text-3xl">Featured Stories:</h3>
+        <ul class="list-inside list-disc">
+          <li>None yet</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-5">
+    <h2 class="heading-text">Meet our Team</h2>
+    <div class="ml-1 mt-3 grid lg:ml-3 lg:grid-cols-2 xl:grid-cols-3">
+      <div id="mahashat">
+        <Image
+          src={mahashatImage}
+          alt="Mahashat Rahman"
+          class="max-w-[400px] rounded-lg"
+        />
+        <p class="text-xl sm:text-2xl">Mahashat Rahman</p>
+        <p>Founder</p>
+        <p>Writer and Managing Director</p>
+      </div>
+
+      <div id="moheshwar">
+        <Image
+          src={moheshwarImage}
+          alt="Moheshwar Amarnath Biswas"
+          class="max-w-[400px] rounded-lg"
+        />
+        <p class="text-xl sm:text-2xl">Moheshwar Amarnath Biswas</p>
+        <p>Co-founder</p>
+        <p>Writer and Software Engineer</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="m-auto mt-5">
+    <Image
+      src={greenWeb}
+      alt="This website is hosted Green - checked by thegreenwebfoundation.org"
+    />
+  </div>
 </MainLayout>
