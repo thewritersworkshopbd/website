@@ -20,6 +20,11 @@ export default defineConfig({
     }),
     sitemap(),
     AstroPWA({
+      base: "/",
+      registerType: "autoUpdate",
+      workbox: {
+        cleanupOutdatedCaches: true,
+      },
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
       manifest: {
         background_color: "#ffffff",
