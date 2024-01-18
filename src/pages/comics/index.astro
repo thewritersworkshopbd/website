@@ -1,31 +1,5 @@
 ---
-import { getCollection } from "astro:content";
-import ISO6391 from "iso-639-1";
-import MainLayout from "../../layouts/Main.astro";
-const comics = await getCollection("comics");
+import PostsIndex from "../../layouts/PostsIndex.astro"
 ---
 
-<MainLayout
-  title="Comics"
-  description="Comics by our team"
-  socialImage="/images/social/comics/index.png"
->
-  <ul class="m-auto list-disc">
-    {
-      comics.map((comic) => (
-        <li>
-          <a
-            href={`/comics/${comic.slug}/`}
-            class="text-xl underline decoration-pink-500 duration-500 hover:decoration-sky-500 sm:text-3xl"
-          >
-            {comic.data.title}
-          </a>
-          <p class="text-base sm:text-lg">Author: {comic.data.author}</p>
-          <p class="text-base sm:text-lg">
-            Language: {ISO6391.getName(comic.data.lang)}
-          </p>
-        </li>
-      ))
-    }
-  </ul>
-</MainLayout>
+<PostsIndex title="Comics" description="Comics by our team" collection="comics"/>

@@ -1,0 +1,44 @@
+---
+// external imports
+import { getCollection } from "astro:content";
+import ISO6391 from "iso-639-1";
+
+// internal imports
+import MainLayout from "./Main.astro";
+
+// type defination
+export interface Props {
+  title: string;
+  description: string;
+  collection: string;
+}
+
+const { title, description, collection } = Astro.props;
+// @ts-ignore
+const posts = await getCollection(collection);
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  socialImage="/social_images/index.png"
+>
+  <ul class="m-auto list-disc">
+    {
+      posts.map((post) => (
+        <li>
+          <a
+            href={`/${collection}/${post.slug}/`}
+            class="text-xl underline decoration-pink-500 duration-500 hover:decoration-sky-500 sm:text-3xl"
+          >
+            {post.data.title}
+          </a>
+          <p class="text-base sm:text-lg">Author: {post.data.author}</p>
+          <p class="text-base sm:text-lg">
+            Language: {ISO6391.getName(post.data.lang)}
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+</MainLayout>
