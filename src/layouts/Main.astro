@@ -1,10 +1,15 @@
 ---
+// external imports
 import { ViewTransitions } from "astro:transitions";
+
+// internal imports
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 import PWA from "../components/PWA.astro";
 import SocialTags from "../components/SocialTags.astro";
 import "../styles/index.css";
+
+// type defination
 export interface Props {
   title: string;
   description: string;

@@ -1,5 +1,7 @@
+// external imports
 import { defineCollection, z } from "astro:content";
 
+// define schema(s)
 const genericSchema = z.object({
   lang: z.string(),
   title: z.string(),
@@ -18,7 +20,7 @@ const storiesCollection = defineCollection({
   schema: genericSchema,
 });
 
-// 3. Export a single `collections` object to register your collection(s)
+// Export a single `collections` object to register our collection(s)
 export const collections = {
   comics: comicsCollection,
   stories: storiesCollection,
