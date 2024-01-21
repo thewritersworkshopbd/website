@@ -59,15 +59,15 @@ const slogan = "Express your creativity!";
     <h2 class="heading-text">Meet our Team</h2>
     <div class="ml-1 mt-5 grid lg:ml-3 lg:grid-cols-2 xl:grid-cols-3">
       <div id="mahashat">
-        <Image
-          src={mahashatImage}
-          alt="Mahashat Rahman"
-          class="max-w-[400px] rounded-lg"
-        />
         <a
           href="javascript:alert('Error 404! Website not found for Mahashat Rahman')"
           class="link"
         >
+          <Image
+            src={mahashatImage}
+            alt="Mahashat Rahman"
+            class="max-w-[400px] rounded-lg"
+          />
           <p class="text-xl sm:text-2xl">Mahashat Rahman</p></a
         >
         <p>Founder</p>
@@ -75,13 +75,17 @@ const slogan = "Express your creativity!";
       </div>
 
       <div id="moheshwar">
-        <Image
-          src={moheshwarImage}
-          alt="Moheshwar Amarnath Biswas"
-          class="max-w-[400px] rounded-lg"
-        />
-        <a href="https://fluentmoheshwar.pages.dev" target="_blank">
-          <p class="link text-xl sm:text-2xl">Moheshwar Amarnath Biswas</p>
+        <a
+          href="https://fluentmoheshwar.pages.dev"
+          target="_blank"
+          class="link"
+        >
+          <Image
+            src={moheshwarImage}
+            alt="Moheshwar Amarnath Biswas"
+            class="max-w-[400px] rounded-lg"
+          />
+          <p class="text-xl sm:text-2xl">Moheshwar Amarnath Biswas</p>
         </a>
         <p>Co-founder</p>
         <p>Writer and Software Engineer</p>
