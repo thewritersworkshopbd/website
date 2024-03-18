@@ -43,7 +43,7 @@
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "prettier-plugin-tailwindcss": "^0.5.12",
-    "vite-plugin-pwa": "^0.19.2",
+    "vite-plugin-pwa": "^0.19.4",
     "workbox-window": "^7.0.0"
   }
 }
