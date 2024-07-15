@@ -33,7 +33,7 @@
     "@tailwindcss/typography": "^0.5.13",
     "@vite-pwa/astro": "^0.3.0",
     "browserslist": "^4.23.0",
-    "daisyui": "^4.12.2",
+    "daisyui": "^4.12.10",
     "lightningcss": "^1.25.1",
     "prettier": "^3.3.2",
     "prettier-plugin-astro": "^0.13.0",
